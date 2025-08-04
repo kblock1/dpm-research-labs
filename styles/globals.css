@@ -27,8 +27,12 @@ header {
 }
 
 /* Logo/text */
-header img,
 header h1 {
+  filter: brightness(0) invert(1);
+}
+
+/* Add a specific class for non-logo images */
+header img.invert {
   filter: brightness(0) invert(1);
 }
 
