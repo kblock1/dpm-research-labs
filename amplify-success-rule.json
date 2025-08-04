@@ -1,9 +1,0 @@
-{
-  "source":["aws.amplify"],
-  "detail-type":["Amplify Deployment Status Change"],
-  "detail":{
-    "appId":["!GetAtt DPMAmplifyApp.AppId"],
-    "branchName":["master"],
-    "jobStatus":["SUCCEED"]
-  }
-}
