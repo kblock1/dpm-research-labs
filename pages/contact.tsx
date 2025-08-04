@@ -1,15 +1,21 @@
 import { useState } from 'react'
 import Layout from '../components/Layout'
+import type { FormEvent } from 'react'
 
 export default function Contact() {
   const [status, setStatus] = useState<'idle'|'sending'|'sent'>('idle')
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     setStatus('sending')
+    const form = e.currentTarget
     const res = await fetch('/api/contact', {
       method: 'POST',
       headers: {'Content-Type':'application/json'},
-      body: JSON.stringify({ name: e.target.name.value, email: e.target.email.value, message: e.target.message.value })
+      body: JSON.stringify({ 
+        name: form.name.value, 
+        email: form.email.value, 
+        message: form.message.value 
+      })
     })
     if (res.ok) setStatus('sent')
   }
