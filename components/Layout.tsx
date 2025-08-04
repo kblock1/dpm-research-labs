@@ -1,7 +1,13 @@
 import Header from './Header'
 import Head from 'next/head'
+import { ReactNode } from 'react'
 
-export default function Layout({ children, title = 'DPM Research Labs' }) {
+interface LayoutProps {
+  children: ReactNode
+  title?: string
+}
+
+export default function Layout({ children, title = 'DPM Research Labs' }: LayoutProps) {
   return (
     <>
       <Head>
