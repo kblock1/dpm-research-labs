@@ -8,8 +8,8 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
   if (req.method !== 'POST') return res.status(405).end()
   const { name, email, message } = req.body
   await ses.sendEmail({
-    Source: 'contact@dpm-research-labs.com',
-    Destination: { ToAddresses: ['you@yourdomain.com'] },
+    Source: 'contact@dpmlabs.block.au',
+    Destination: { ToAddresses: ['kieran@block.net.au'] },
     Message: {
       Subject: { Data: `Contact form: ${name}` },
       Body: { Text: { Data: `From: ${name} <${email}>\n\n${message}` } }
