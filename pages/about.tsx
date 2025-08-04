@@ -11,7 +11,7 @@ export default function About() {
       </p>
       <p>
         With a proven methodology and world-class expertise, we help businesses
-        leverage the full potential of artificial intelligence—on time and on
+        leverage the full potential of artificial intelligence — on time and on
         budget.
       </p>
     </Layout>
