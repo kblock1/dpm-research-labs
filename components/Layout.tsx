@@ -7,7 +7,7 @@ interface LayoutProps {
   title?: string
 }
 
-export default function Layout({ children, title = 'DPM Research Labs' }: LayoutProps) {
+export default function Layout({ children, title = 'DPM Labs' }: LayoutProps) {
   return (
     <>
       <Head>

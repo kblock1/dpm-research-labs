@@ -3,7 +3,7 @@ import Link from 'next/link'
 export default function Header() {
   return (
     <header>
-      <img src="/img/logo.svg" alt="DPM Research Labs" />
+      <img src="/img/logo.svg" alt="DPM Labs" />
       <nav>
         <Link href="/">Home</Link>
         <Link href="/services">Services</Link>

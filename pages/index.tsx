@@ -3,9 +3,9 @@ import Layout from '../components/Layout'
 export default function Home() {
   return (
     <Layout title="Home">
-      <h1>Welcome to DPM Research Labs</h1>
+      <h1>Welcome to DPM Labs</h1>
       <p>
-        At DPM Research Labs, we specialize in transforming business challenges
+        At DPM Labs, we specialize in transforming business challenges
         into innovation opportunities through cutting-edge AI research.
       </p>
       <ul>

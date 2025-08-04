@@ -15,7 +15,7 @@ const Layout = ({ children, title }: LayoutProps) => (
 export default function About() {
   return (
     <Layout title="About">
-      <h1>About DPM Research Labs</h1>
+      <h1>About DPM Labs</h1>
       <p>
         We have the skills, processes, and laboratory environment to drive AI
         innovation. Our team has delivered advanced AI R&D for multinational
