@@ -22,7 +22,7 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 1rem 2rem;
-  background: #180093;
+  background: #0d0539;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.7);
 }
 
@@ -65,6 +65,6 @@ footer {
   text-align: center;
   padding: 1rem;
   font-size: 0.9rem;
-  color: #180093;
+  color: #0d0539;
   background: #140085d8;
 }

@@ -2,9 +2,18 @@ import Layout from '../components/Layout'
 
 export default function About() {
   return (
-    <Layout title="About Us">
-      <h2>Why DPM Research Labs?</h2>
-      <p>We combine deep technical expertise with rigorous R&D processes to deliver enterprise-grade AI solutions.</p>
+    <Layout title="About">
+      <h1>About DPM Research Labs</h1>
+      <p>
+        We have the skills, processes, and laboratory environment to drive AI
+        innovation. Our team has delivered advanced AI R&D for multinational
+        banks and top tech consultancies.
+      </p>
+      <p>
+        With a proven methodology and world-class expertise, we help businesses
+        leverage the full potential of artificial intelligence—on time and on
+        budget.
+      </p>
     </Layout>
   )
 }
