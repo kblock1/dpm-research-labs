@@ -1,16 +1,4 @@
-import { ReactNode } from 'react';
-
-interface LayoutProps {
-  children: ReactNode;
-  title?: string;
-}
-
-const Layout = ({ children, title }: LayoutProps) => (
-  <div>
-    <h1>{title}</h1>
-    {children}
-  </div>
-)
+import Layout from '../components/Layout'
 
 export default function About() {
   return (
