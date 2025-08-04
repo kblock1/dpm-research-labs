@@ -4,7 +4,7 @@ import AWS from 'aws-sdk'
 AWS.config.update({ region: 'ap-southeast-2' })
 const ses = new AWS.SES()
 
-export default async (req: NextApiRequest, res: NextApiResponse) => {
+export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   if (req.method !== 'POST') return res.status(405).end()
   const { name, email, message } = req.body
   await ses.sendEmail({
