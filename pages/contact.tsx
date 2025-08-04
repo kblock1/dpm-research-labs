@@ -12,9 +12,9 @@ export default function Contact() {
       method: 'POST',
       headers: {'Content-Type':'application/json'},
       body: JSON.stringify({ 
-        name: form.name.value, 
-        email: form.email.value, 
-        message: form.message.value 
+        name: (form.elements.namedItem('name') as HTMLInputElement).value,
+        email: (form.elements.namedItem('email') as HTMLInputElement).value,
+        message: (form.elements.namedItem('message') as HTMLTextAreaElement).value
       })
     })
     if (res.ok) setStatus('sent')
@@ -29,7 +29,7 @@ export default function Contact() {
         <label>Message<textarea name="message" required /></label>
         <button type="submit">{status === 'sending' ? 'Sending…' : 'Send'}</button>
       </form>
-      {status === 'sent' && <p>Thanks—we’ll reply shortly.</p>}
+      {status === 'sent' && <p>Thanks—we'll reply shortly.</p>}
     </Layout>
   )
 }
