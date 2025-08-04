@@ -24,10 +24,21 @@ export default function Contact() {
     <Layout title="Contact">
       <h2>Get in Touch</h2>
       <form onSubmit={handleSubmit}>
-        <label>Name<input name="name" required /></label>
-        <label>Email<input type="email" name="email" required /></label>
-        <label>Message<textarea name="message" required /></label>
-        <button type="submit">{status === 'sending' ? 'Sending…' : 'Send'}</button>
+        <label>
+          Name
+          <input name="name" required />
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" required />
+        </label>
+        <label>
+          Message
+          <textarea name="message" required />
+        </label>
+        <button type="submit">
+          {status === 'sending' ? 'Sending…' : 'Send'}
+        </button>
       </form>
       {status === 'sent' && <p>Thanks—we'll reply shortly.</p>}
     </Layout>
